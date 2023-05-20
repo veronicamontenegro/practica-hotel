@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100&display=swap');
 
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -18,17 +20,24 @@ header{
     height: 90px;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #fffef2;
     justify-content: space-between;
     border-radius: 80px;
     position: fixed;
 }
 
-.menu-bar-logo{
+/* .menu-bar-logo{
     /* justify-content: flex-start; */
-    padding: 30px;
-    width: 30vw;
+    /* padding: 30px;
+    width: 30vw; */
+
+.logo-hotel{
+    height: 70px;
+    width: auto;
+    margin-left: 20px;
+    box-shadow: none;
 }
+
 
 .menu-bar-buttons{
     width: 70vw;
@@ -46,6 +55,8 @@ li{
 
 a{
     text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 .hero{
@@ -55,36 +66,165 @@ a{
     background-size: cover;
     background-position: bottom;
     display: table;
-    background-attachment: fixed;
-    
+    background-attachment: fixed; 
 
 }
 
-h1{
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+    font-size: 100px;
+    color: #fffef2;
+    text-align: center;
+}
+
+.texto-hero{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: 650px;
-    margin-right: 30px;
-    font-size: 40px;
-    
-
+    text-align: end;
+    /* margin-top: 680px; */
+    margin-top: 190px;
+    margin-right: 40px;
+    font-size: 35px;
+    color: #fffef2;
 }
 
-/* body{
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-} */
+body{
+    /* background: rgba(243, 234, 253, 1.0);
+    background: linear-gradient(135deg, rgba(243, 234, 253, 1.0), rgba(121, 84, 140, 1.0)); */
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
 
 .card{
     display: flex;
     justify-content: space-evenly;
-    max-height: 150px;
-    margin: 20px;
+    height: 300px;
+    margin: 100px;
     
 }
 
 .tarjeta{
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     border-radius: 15px;
-    padding: 10px;
+    width: 300px;
+    text-align: center;
+    line-height: 2;
+    padding: 50px;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+    
 }
+
+.button-reserva{
+    background-color:#C0C0C0;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+video{
+    height: auto;
+    min-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    
+}
+
+.nosotros{
+    margin: 90px;
+}
+
+.nuestros-valores{
+    text-align: center;
+    font-size: 35px;
+}
+
+p{
+    font-size: 20px;
+    margin: 40px;
+    text-align: center;
+    line-height: 2;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.galeria{
+    display: flex;
+    margin: 80px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* background-position: bottom; */
+    /* display: table; */
+}
+
+.titulos-e-imagenes{
+    z-index: -1;
+    padding: 30px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+img{
+    height: auto;
+    width: 520px;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);-webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);-moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    /* background-position: bottom; */
+    /* display: table; */
+    /* background-size: cover; */
+    /* background-attachment:fixed; */
+    
+
+}
+
+h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fffef2;
+}
+
+.text-footer{
+    text-align: center;
+    margin: 70px;
+}
+
+.buttons{
+    display: inline-block;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.img-fb{
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+}
+
+.img-ig{
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+}
+
+.img-email{
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+}
+
+/* .img-tripadvisor{
+    box-shadow: none;
+    height: 90px;
+    width: auto;
+} */
